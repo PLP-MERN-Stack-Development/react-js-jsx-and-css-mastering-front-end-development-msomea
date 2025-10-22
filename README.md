@@ -1,70 +1,94 @@
-# React.js and Tailwind CSS Assignment
+# 🎨 Week 3 – React.js, JSX, and Tailwind CSS Project
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+## 🚀 Objective
+Build a responsive React application using **Vite** and **Tailwind CSS** that demonstrates component architecture, state management with hooks, and local data persistence.
 
-## Assignment Overview
+---
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+## 🧩 Features
 
-## Getting Started
+- ⚛️ **React + Vite** fast-refresh development
+- 🎨 **Tailwind CSS** responsive styling
+- 🧠 **State Management** using `useState`, `useEffect`, `useContext`
+- 💾 **LocalStorage Persistence** via a custom hook
+- 📋 **Task Manager** with Add / Complete / Delete / Filter
+- 🔍 **Search and Pagination**
+- 🌗 **Dark / Light Theme Toggle**
+- 🧱 **Reusable Components**: Button, Card, Navbar, Footer
+- 📱 Fully responsive layout (mobile → desktop)
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+---
 
-## Files Included
+## 📂 Project Structure
+        
+            src/
+            ├── components/
+            │ ├── ui/
+            │ │ ├── Button.jsx
+            │ │ ├── Card.jsx
+            │ │ └── ...
+            │ ├── Navbar.jsx
+            │ └── Footer.jsx
+            │
+            ├── features/
+            │ ├── TaskManager.jsx
+            │ └── Tasks.jsx
+            │
+            ├── hooks/
+            │ └── useLocalStorage.js
+            │
+            ├── App.jsx
+            ├── main.jsx
+            └── index.css
+        
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
 
-## Requirements
+## ⚙️ Setup & Installation
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
-
-## Project Structure
-
-```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+### Clone the Repository
+```bash
+git clone https://github.com/PLP-MERN-Stack-Development/react-js-jsx-and-css-mastering-front-end-development-msomea.gitweek3-react-tailwind.git
 ```
 
-## Submission
+### Enter project directory
+```
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+cd week3-react-tailwind
+```
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+### Install Dependents
+```
+npm install
+```
 
-## Resources
+### Ren Server
+```
+npm run dev
+```
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+## 🏗️ Build for Production
+```
+npm run build
+```
+## 🌐 Deploy to GitHub Pages
+### Install GitHub Pages Package
+```
+npm install gh-pages --save-dev
+```
+
+### Edit package.json
+```
+"homepage": "https://<your-username>.github.io/week3-react-tailwind/",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+```
+
+### Run Deploy
+``
+npm run deploy
+```
+
+### Live Link
+
