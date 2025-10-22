@@ -32,7 +32,7 @@ const pageItems = filtered.slice((page-1)*PAGE_SIZE, page*PAGE_SIZE)
 
 return (
         <Card>
-            <h2 className="text-xl font-semibold mb-3">Posts (JSONPlaceholder)</h2>
+            <h2 className="text-xl font-semibold mb-3">Your Tasks</h2>
             <div className="flex gap-2 mb-4">
                 <input value={q} onChange={e=>{ setQ(e.target.value); setPage(1) }} placeholder="Search title/body" className="flex-1 p-2 rounded border dark:bg-gray-700" />
                 <Button onClick={()=>{ setQ(''); setPage(1) }}>Clear</Button>
